@@ -1,0 +1,132 @@
+.section1 {
+	background-blend-mode: screen;
+	background-color: #010;
+	background-image: url("../img/xenomorph.jpg");
+	background-position: center, top;
+	background-size: cover;
+}
+
+.start_text {
+	background-color: rgba(46, 46, 46, 0.4);
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	right: 0;
+	top: 30%;
+	width: fit-content;
+	display: table;
+}
+.start_text h1 {
+	color: azure;
+	font-family: bigFont;
+	font-size: 2.2em;
+	text-align: center;
+}
+.start_text p {
+	color: azure;
+	font-size: 1.6em;
+	margin: 25px;
+	max-width: 900px;
+}
+
+
+.section2 {
+	height: 20px; /*expands with content - fit-content is not widely supported*/
+	display: table;
+	width: 100%;
+}
+
+.aliens_grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	overflow: hidden;
+	width: 100%;
+	max-width: 1700px;
+	margin: auto;
+}
+.aliens_grid h1 {
+	font-size: 2.7em;
+	grid-column: 1 / span 3;
+	margin: 40px auto;
+	text-align: center;
+}
+
+.alien_img {
+	border: 8px solid var(--inner_dark);
+	height: 400px;
+	margin: auto;
+	object-fit: cover;
+	width: 320px;
+}
+.aliens_text {
+	margin: 30px auto;
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 40px;
+	text-align: center;
+}
+
+.section3 {
+	background-attachment: fixed;
+	background-image: url("../img/Aliens.jpg");
+	background-position: center bottom;
+	background-size: cover;
+	border: 10px solid var(--inner_dark);
+	padding-top: 200px;
+	position: relative;
+}
+
+.stories_intro {
+	background-color: var(--inner_light);
+	border: 5px solid var(--inner_dark);
+	bottom: 0;
+	padding: 20px;
+	position: absolute;
+}
+.stories_intro h1 {
+	font-size: 2.4em;
+	margin-bottom: 4px;
+}
+
+
+@media only screen and (max-width: 1030px) {
+	.aliens_grid {
+		grid-template-columns: auto auto;
+		row-gap: 14px;
+	}
+	.aliens_grid h1 {
+		grid-column: 1 / span 2;
+	}
+	.alien_img:nth-child(4) {
+		grid-column: 1 / span 2;
+	}
+}
+@media only screen and (max-width: 730px) {
+	.alien_img {
+		height: 325px;
+		width: 260px;
+	}
+}
+@media only screen and (max-width: 625px), only screen and (max-height: 700px){
+	.start_text {
+		top: var(--nav_height);
+	}
+	.start_text p {
+		font-size: 1.2em;
+	}
+
+	.aliens_grid {
+		grid-template-columns: auto;
+	}
+	.aliens_grid h1 {
+		grid-column: 1 / span 1;
+	}
+	.alien_img {
+		height: 125vw;
+		width: 100vw;
+	}
+	.alien_img:nth-child(4) {
+		grid-column: 1 / span 1;
+	}
+}

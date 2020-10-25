@@ -1,0 +1,26 @@
+:root {
+	--nav-height: 80px;
+}
+nav {
+	max-width: 1250px;
+}
+
+.story_items {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+}
+
+.story_item {
+	background-color: var(--inner_light);
+	border: 8px var(--inner_dark) solid;
+}
+.story_item h1 {
+	margin-left: 20px;
+}
+.story_item img {
+	width: 100%;
+}
+.story_text {
+	margin: 16px;
+}

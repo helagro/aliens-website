@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Aliens</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/aliens.css">
+        <link rel="icon" href="img/Bubble Head.jpg">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="aliens.html">Aliens</a>
+                <a href="stories.html">Stories</a>
+            </div> 
+    
+            <div class="spacing_nav_div"></div> 
+    
+            <div class="logo">
+                <a href="index.html"><img src="img/Bubble Head.jpg" alt="Icon"/></a>
+            </div>
+            
+            <div class="dropdown">
+                <input type="checkbox" id=hidden_menu_checkbox onclick="dim()">
+    
+                <label for=hidden_menu_checkbox class="small_screen_menu" onclick>
+                    <a href="index.html">Home</a>
+                    <a href="aliens.html">Aliens</a>
+                    <a href="stories.html">Stories</a>
+                </label>
+                <label for=hidden_menu_checkbox class="menu_dropdown_button">
+                    <img src="img/open-menu.svg" alt="open menu"/>
+                </label>
+            </div>
+        </nav>
+
+        <div id="dimmer" onclick="dimmerClicked()"></div>
+
+        <div class="aliens_grid">
+            <img class="aliens_preview"
+            src="img/Green Alien.jpg" alt="Green Alien"/>
+            <div class="aliens_description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam nunc vitae libero facilisis, eu varius dui lobortis. Proin posuere molestie fermentum. Nullam ut lacus ut turpis lacinia ullamcorper. Praesent lobortis nisi imperdiet dapibus finibus. Cras venenatis, turpis nec lobortis egestas, velit erat ultrices velit, id tristique purus ipsum sed velit. Phasellus hendrerit arcu in ipsum auctor, vitae dignissim odio tristique. Phasellus nibh orci, blandit ac tortor at, sodales dignissim ex. Etiam rhoncus lorem eget leo pretium, in iaculis nisl placerat. Donec accumsan viverra justo, ut ultrices ex. Nam aliquam, orci ut hendrerit commodo, lacus ligula finibus magna, et tempus libero elit at lectus. Nullam id ante iaculis, pulvinar ante id, pretium purus. Sed sit amet velit in tortor sagittis.</p>
+            </div>
+
+            <img class="aliens_preview"
+                src="img/Green Alien 2.jpg" alt="Green Alien 2"/>
+            <div class="aliens_description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at volutpat sapien. In pulvinar varius purus, in dictum est faucibus nec. Cras ornare, nisi at laoreet cursus, velit neque elementum eros, a commodo tortor nunc eget nisi. Fusce aliquet eu felis quis malesuada. Proin non interdum ex. Quisque et nibh vel enim vulputate egestas. Vestibulum vel pharetra ex, vel viverra tortor. Nam feugiat at ante sed finibus. Phasellus imperdiet, sapien at venenatis sollicitudin, ipsum orci dignissim elit, vel pharetra purus ex non sem. Curabitur metus leo, rhoncus sit amet urna et, feugiat ultricies metus. Vivamus quam nibh, iaculis in ex a, dictum lobortis nibh. Aliquam eu varius ex, lobortis luctus diam. Integer vitae ipsum augue. Proin bibendum sem quis lobortis molestie. Nunc in imperdiet ante. Duis pharetra ullamcorper luctus. Vivamus luctus consequat dui ac ornare. Nunc iaculis imperdiet lorem, eu.</p>
+            </div>
+
+            <img class="aliens_preview"
+                src="img/Alien Woman.jpg" alt="alien woman"/>
+            <div class="aliens_description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non volutpat nunc. Maecenas porta augue libero, eget varius dui interdum et. Praesent aliquet lacinia lacinia. Morbi ligula neque, condimentum a egestas vitae, elementum at enim. Donec consectetur accumsan sagittis. Aliquam erat volutpat. Curabitur mollis elit diam, quis cursus lacus lobortis et.
+
+                    Integer quis efficitur diam, at aliquam purus. Integer tristique nulla nisl, a pharetra ipsum rhoncus aliquam. Vestibulum ac accumsan metus. Ut posuere blandit urna ut auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean eu scelerisque nisl, sit amet porta quam. Curabitur ligula neque, suscipit eu sollicitudin vitae, mollis nec eros. Ut vitae luctus ex. Duis vel tincidunt libero. Nunc cursus quam augue, a condimentum justo maximus non. Proin non viverra risus. Aenean.</p>
+            </div>
+
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

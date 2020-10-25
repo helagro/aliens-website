@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="stylesheets/index.css">
+        <link rel="icon" href="img/Bubble Head.jpg">
+    </head>
+    <body>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <nav>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="aliens.html">Aliens</a>
+                <a href="stories.html">Stories</a>
+            </div> 
+    
+            <div class="spacing_nav_div"></div> 
+    
+            <div class="logo">
+                <a href="index.html"><img src="img/Bubble Head.jpg" alt="Icon"/></a>
+            </div>
+            
+            <div class="dropdown">
+                <input type="checkbox" id=hidden_menu_checkbox onclick="dim()">
+    
+                <label for=hidden_menu_checkbox class="small_screen_menu" onclick>
+                    <a href="index.html" >Home</a>
+                    <a href="aliens.html">Aliens</a>
+                    <a href="stories.html">Stories</a>
+                </label>
+                <label for=hidden_menu_checkbox class="menu_dropdown_button">
+                    <img src="img/open-menu.svg" alt="open menu"/>
+                </label>
+            </div>
+        </nav>
+
+        <div id="dimmer" onclick="dimmerClicked()"></div>
+
+        <section class="section1">
+            <div class="start_text">
+                <h1>Header</h1>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Mauris placerat eleifend leo.</p>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+            </div>
+        </section>
+
+
+        <section class="section2">
+            <div class="aliens_grid">
+                <h1><a href="aliens.html">Extraterrestrial Specimens</a></h1>
+                <img class="alien_img" src="img/Green Alien.jpg" alt="green alien"/>
+                <img class="alien_img" src="img/Green Alien 2.jpg" alt="green alien 2"/>
+                <img class="alien_img" src="img/Alien Woman.jpg" alt="alien woman"/>
+            </div>
+            <div class="aliens_text">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            </div>
+        </section>
+
+
+        <section class="section3">
+            <div class="stories_intro">
+                <h1><a href="stories.html">Stories</a></h1>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            </div>
+        </section>
+
+
+        <script src="script.js" async defer></script>
+    </body>
+</html>
